@@ -1,14 +1,15 @@
 import './App.css';
 import Banner from './components/Banner';
-import { ReactComponent as Logo } from './images/logo.svg';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <div className="navbar">
-        <Logo />
+      <Navbar />
+      <div className='mainImg'>
       </div>
+      
       </div>
   );
 }

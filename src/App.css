@@ -1,4 +1,6 @@
-
+.App{
+  box-sizing: border-box;
+}
 .banner{
   background-color:  #f4f4f4;
   display: flex;
@@ -9,4 +11,31 @@
 
 .bannerText{
   text-decoration: underline;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1%;
+}
+
+.navbarBtn{
+  background-color: white;
+  border: 1px solid ;
+  padding: 3%;
+}
+
+.navbarBtnContainer{
+  margin-left: 72%;  
+  width: 11%;
+}
+
+.mainImg{
+  margin-top: 1%;
+  background-image: url('https://resources.turo.com/f/81934/1200x400/7d7dd59964/hp_michelin_1200x400_2.jpg'); 
+  background-position: left center;
+  background-color: #00A7E1; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px; 
 }
