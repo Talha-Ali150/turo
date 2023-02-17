@@ -1,0 +1,46 @@
+.mainImg {
+    margin-top: 1%;
+    background-image: url("https://resources.turo.com/f/81934/1200x400/7d7dd59964/hp_michelin_1200x400_2.jpg");
+    background-position: left center;
+    background-color: #00a7e1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+  }
+
+  .heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subHeading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subHeadingContainer{  
+    height: 100px;
+    width: 55%;
+    text-align: center;
+  }
+  
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .subHeadingBackground{
+    height: 30px;
+    background-color: #f2e9ff;
+    position: relative;
+    top: 46px;
+    z-index: -1;
+  }

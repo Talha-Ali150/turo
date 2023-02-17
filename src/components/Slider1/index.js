@@ -1,10 +1,10 @@
-import '../../App.css'
+import './index.css'
 import React from 'react'
-import ImgMediaCard from "../Card";
+import Card1 from "../Card1";
 import Carousel from "react-elastic-carousel";
 
 
-export default function CarSlider() {
+export default function Slider1() {
     const cardProps = [
         {
           title: "Jeep",
@@ -59,6 +59,9 @@ export default function CarSlider() {
       ];
   return (
     <div className="carouselContainer">
+      <div className="carouselHeadingContainer">
+        <p className="carouselHeading">Browse by make</p>
+      </div>
     <Carousel
       outerSpacing={0}
       itemPadding={[10, 0]}
@@ -67,7 +70,7 @@ export default function CarSlider() {
       pagination={false}
     >
       {cardProps.map((item) => {
-        return <ImgMediaCard title={item.title} source={item.source} />;
+        return <Card1 title={item.title} source={item.source} />;
       })}
     </Carousel>
   </div>

@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1%;
+  }
+  
+  .navbarBtn {
+    background-color: white;
+    border: 1px solid;
+    padding: 3%;
+  }
+  
+  .navbarBtnContainer {
+    margin-left: 72%;
+    width: 11%;
+  }

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "./index.css";
 import { ReactComponent as Logo } from "../../images/logo.svg";
 import { ReactComponent as Option } from "../../images/hamburger.svg";
 import { ReactComponent as User } from "../../images/user.svg";

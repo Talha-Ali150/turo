@@ -1,11 +1,9 @@
 import "./App.css";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
-import ImgMediaCard from "./components/Card";
-
-import Carousel from "react-elastic-carousel";
-import CarSlider from "./components/CarSlider";
+import Slider1 from "./components/Slider1";
 import Heading from "./components/Heading";
+import Slider2 from "./components/Slider2";
 
 function App() {
   return (
@@ -13,7 +11,8 @@ function App() {
       <Banner />
       <Navbar />
       <Heading />
-      <CarSlider />
+      <Slider1 />
+      <Slider2 />
     </div>
   );
 }
