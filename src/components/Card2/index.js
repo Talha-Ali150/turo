@@ -3,7 +3,6 @@ import "./index.css";
 
 export default function Card2(props) {
   return (
-    <div>
       <div className="cardContainer">
         <div className="container1">
           <img src={props.imgSrc} />
@@ -21,6 +20,5 @@ export default function Card2(props) {
           </div>
         </div>
       </div>
-    </div>
   );
 }

@@ -8,6 +8,10 @@
     border-radius: 8px;
     box-shadow: 0px 0px 2px;
   }
+
+  .carCard:hover{
+    color: 593cfb;
+  }
   
   .carImgContainer {
     height: 154px;

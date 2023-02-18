@@ -1,0 +1,13 @@
+.carouselContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+    
+  .carouselHeading{
+    font-size: 21px;
+    font-weight: bold;
+  }
+  
+  .carouselHeadingContainer {
+    margin-left: 75px;
+  }
