@@ -1,7 +1,8 @@
-.carouselContainer {
-    width: 90%;
-    margin: 0 auto;
-  }
+.carouselContainer4 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
     
   .carouselHeading{
     font-size: 21px;

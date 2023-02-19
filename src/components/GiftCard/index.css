@@ -1,0 +1,37 @@
+.giftCardContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f9f4ff;
+  padding: 40px 0 40px 0;
+}
+.giftCardContainer2Heading {
+  font-size: 28px;
+  font-weight: bold;
+}
+.giftCardContainer2Para {
+  font-size: 16px;
+}
+
+.giftCardContainer2Btn {
+  background-color: #593cfb;
+  color: white;
+  line-height: 50px;
+  font-weight: bold;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 0px 10px;
+  margin: 15px 0 0 0;
+}
+.giftCardContainer1 {
+  width: 45%;
+}
+.giftCardContainer1Img {
+  display: inline-block;
+  width: 90%;
+  margin: 0 0 0 45px;
+}
+.giftCardContainer2 {
+  width: 40%;
+  margin: 0 0 0 100px;
+}

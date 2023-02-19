@@ -44,7 +44,7 @@ export default function Slider2() {
   ];
   return (
     <div>
-      <div className="carouselContainer">
+      <div className="carouselContainer2">
         <Carousel
           itemsToScroll={1}
           itemsToShow={1}

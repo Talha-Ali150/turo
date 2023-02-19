@@ -58,7 +58,7 @@ export default function Slider1() {
         },
       ];
   return (
-    <div className="carouselContainer">
+    <div className="carouselContainer1">
       <div className="carouselHeadingContainer">
         <p className="carouselHeading">Browse by make</p>
       </div>

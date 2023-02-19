@@ -8,7 +8,7 @@ import Slider3 from "./components/Slider3";
 import Heading2 from "./components/Heading2";
 import Image2 from "./components/Image2";
 import Slider4 from "./components/Slider4";
-import { ReactComponent as Test } from "./images/test.svg";
+import GiftCard from "./components/GiftCard";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <Heading2 />
       <Image2 />
       <Slider4 />
-      <Test />
+      <GiftCard />
     </div>
   );
 }

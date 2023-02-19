@@ -49,7 +49,7 @@ export default function Slider4() {
     },
   ];
   return (
-    <div className="carouselContainer">
+    <div className="carouselContainer4">
       <div className="carouselHeadingContainer">
         <p className="carouselHeading">Browse by experience</p>
       </div>

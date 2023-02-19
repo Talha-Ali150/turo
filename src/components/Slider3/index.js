@@ -121,7 +121,7 @@ export default function Slider3() {
     },
   ];
   return (
-    <div className="carouselContainer">
+    <div className="carouselContainer3">
       <div className="carouselHeadingContainer">
         <p className="carouselHeading">Browse by destination</p>
       </div>
