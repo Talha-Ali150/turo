@@ -9,6 +9,9 @@ import Heading2 from "./components/Heading2";
 import Image2 from "./components/Image2";
 import Slider4 from "./components/Slider4";
 import GiftCard from "./components/GiftCard";
+import Heading3 from "./components/Heading3";
+import Slider5 from "./components/Slider5";
+import Image3 from "./components/Image3";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
       <Image2 />
       <Slider4 />
       <GiftCard />
+      <Heading3 />
+      <Slider5 />
+      <Image3 />
     </div>
   );
 }

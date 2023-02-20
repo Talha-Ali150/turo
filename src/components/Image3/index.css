@@ -1,0 +1,28 @@
+.img3Container {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.offer1 {
+  text-align: center;
+  position: relative;
+  bottom: 370px;
+  width: 30%;
+  left: 135px;
+}
+.offer2 {
+  text-align: center;
+  position: relative;
+  bottom: 325px;
+  width: 30%;
+  left: 460px;
+}
+.offer1Head {
+}
+.offer2Head {
+}
+.offer1Para {
+}
+.offer2Para {
+}
