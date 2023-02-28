@@ -2,6 +2,7 @@
   width: 60%;
   margin: 0 auto;
   position: relative;
+  height: 470px;
 }
 
 .offer1 {
@@ -14,13 +15,21 @@
 .offer2 {
   text-align: center;
   position: relative;
-  bottom: 325px;
-  width: 30%;
+  bottom: 360px;
+  width: 34%;
   left: 460px;
 }
 .offer1Head {
+  font-size: 28px;
+  color: #593cfb;
+  font-weight: bold;
+  height: 10px;
 }
 .offer2Head {
+  font-size: 28px;
+  color: #593cfb;
+  font-weight: bold;
+  height: 10px;
 }
 .offer1Para {
 }

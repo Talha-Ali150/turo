@@ -12,6 +12,8 @@ import GiftCard from "./components/GiftCard";
 import Heading3 from "./components/Heading3";
 import Slider5 from "./components/Slider5";
 import Image3 from "./components/Image3";
+import Heading4 from "./components/Heading4";
+import Accord from "./components/Accord";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
       <Heading3 />
       <Slider5 />
       <Image3 />
+      <Heading4 />
+      <Accord />
     </div>
   );
 }
