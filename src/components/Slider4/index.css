@@ -12,3 +12,21 @@
   .carouselHeadingContainer {
     margin-left: 75px;
   }
+
+  @media only screen and (max-width: 1200px) and (min-width: 992px){
+    .carouselContainer4 {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+    }
+        
+      .carouselHeading{
+        font-size: 21px;
+        font-weight: bold;
+      }
+      
+      .carouselHeadingContainer {
+        margin-left: 75px;
+      }
+     
+  }

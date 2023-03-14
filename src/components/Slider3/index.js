@@ -122,8 +122,8 @@ export default function Slider3() {
   ];
   return (
     <div className="carouselContainer3">
-      <div className="carouselHeadingContainer">
-        <p className="carouselHeading">Browse by destination</p>
+      <div className="carouselHeadingContainer3">
+        <p className="carouselHeading3">Browse by destination</p>
       </div>
       <Carousel
         outerSpacing={0}

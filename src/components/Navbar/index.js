@@ -7,7 +7,10 @@ import { ReactComponent as User } from "../../images/user.svg";
 export default function Navbar() {
   return (
     <div className="navbar">
+      <div className="navbarImgDiv">
       <Logo style={{marginLeft: '1%'}} />
+      </div>
+      
       <div className="navbarBtnContainer">
         <button className="navbarBtn">Become a host</button>
       </div>

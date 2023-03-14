@@ -35,3 +35,44 @@
 }
 .offer2Para {
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+  .img3Container {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    height: 470px;
+  }
+  
+  .offer1 {
+    text-align: center;
+    position: relative;
+    bottom: 370px;
+    width: 30%;
+    left: 135px;
+  }
+  .offer2 {
+    text-align: center;
+    position: relative;
+    bottom: 360px;
+    width: 34%;
+    left: 460px;
+  }
+  .offer1Head {
+    font-size: 28px;
+    color: #593cfb;
+    font-weight: bold;
+    height: 10px;
+  }
+  .offer2Head {
+    font-size: 28px;
+    color: #593cfb;
+    font-weight: bold;
+    height: 10px;
+  }
+  .offer1Para {
+  }
+  .offer2Para {
+  }
+   
+}

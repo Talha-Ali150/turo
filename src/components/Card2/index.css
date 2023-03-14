@@ -9,6 +9,7 @@
   font-size: 28px;
   font-weight: bold;
   line-height: 32px;
+  margin-right: 90px;
 }
 .text1b {
   font-size: 28px;
@@ -31,4 +32,43 @@
   border: 1px solid white;
   font-size: 18px;
   padding: 0px 10px;
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px auto;
+  }
+  
+  .text1a {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+  .text1b {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #5948fb;
+  }
+  .container1 {
+    width: 100%;
+  }
+  .container2 {
+    width: 70%;
+  }
+  
+  .btn1 {
+    background-color: #593cfb;
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: 18px;
+    padding: 0px 10px;
+  }
+  
 }
