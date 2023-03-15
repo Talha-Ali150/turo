@@ -3,6 +3,7 @@
     flex-direction: row;
     margin: 0 auto;
     width: 80%;
+    height: 15em;
 }
 .accordContainerLeft{
     width: 50%;
