@@ -13,7 +13,7 @@ import Heading3 from "./components/Heading3";
 import Slider5 from "./components/Slider5";
 import Image3 from "./components/Image3";
 import Heading4 from "./components/Heading4";
-import Accord from "./components/Accord";
+import AccordContainer from "./components/AccordContainer";
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
       <Slider5 />
       <Image3 />
       <Heading4 />
-      <Accord />
+      <AccordContainer />
     </div>
   );
 }

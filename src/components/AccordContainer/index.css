@@ -1,0 +1,21 @@
+.accordContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+}
+.accordContainerLeft{
+    width: 50%;
+
+}
+.accordContainerRight{
+    width: 50%;
+    margin-left: 20px;
+}
+.ant-divider{
+    margin: 10px
+}
+.ant-collapse-header-text{
+    font-size: 16px;
+    font-weight: 500;
+}
