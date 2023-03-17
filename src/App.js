@@ -15,6 +15,7 @@ import Image3 from "./components/Image3";
 import Heading4 from "./components/Heading4";
 import AccordContainer from "./components/AccordContainer";
 import ConditionContainer from "./components/ConditionContainer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Heading4 />
       <AccordContainer />
       <ConditionContainer />
+      <Footer />
     </div>
   );
 }

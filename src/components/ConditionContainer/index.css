@@ -1,12 +1,12 @@
 .conditionContainer{
     background-color: #f4f4f4;
 }
-ul {
+.conditionListContainer {
     list-style: none;
     width: 90%;
     margin: 10em auto;
 }
-li{
+.conditionListContainerItem{
     font-size: 12px;
     margin-bottom: 1.5em;
     font-weight: 500;
