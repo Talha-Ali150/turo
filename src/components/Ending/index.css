@@ -1,0 +1,16 @@
+
+.ending{
+    
+}
+.endingContainer {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    width: 56em;
+    margin-left: 5em;
+    padding: 2em 3em;
+}
+.endingContainerItem{
+
+}
