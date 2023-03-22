@@ -4,8 +4,11 @@
   margin-top: 1%;
 }
 
-.navbarImgDiv {}
-
+.navbarImgDiv {
+  width: 7em;
+  margin-left: 1em;
+  height: 2em;
+}
 .navbarBtn {
   background-color: white;
   border: 1px solid;

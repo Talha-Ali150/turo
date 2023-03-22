@@ -1,0 +1,60 @@
+.searchBarContainer {
+  width: 52em;
+  position: absolute;
+  top: 7em;
+  left: 10em;
+  padding: 0.4em 2em;
+  border: 1px solid white;
+  border-radius: 2em;
+  margin: 0 2px;
+  background-color: white;
+  display: flex;
+}
+.searchBarInput {
+  outline: none;
+  border: none;
+  font-size: 1em;
+}
+.searchBarSection1 {
+  flex: 0.4;
+}
+.searchBarSection2 {
+  flex: 0.3;
+}
+.searchBarSection3 {
+  flex: 0.3;
+}
+.searchBarSection1SectionA {
+}
+.searchBarSection1SectionAPara1 {
+  margin: 0;
+  padding: 0px;
+  font-size: 0.9em;
+}
+.searchBarSection1SectionB {
+}
+.searchBarSection2SectionA {
+}
+.searchBarSection2SectionB {
+  display: flex;
+}
+.searchBarSection3SectionA {
+}
+.searchBarSection3SectionB {
+  display: flex;
+}
+.searchBarSection1SectionAPara {
+  margin: 0 1em;
+  padding: 0px;
+  font-size: 0.8em;
+}
+.searchIcon {
+
+}
+.searchIconContainer {
+  background-color: #593CFB;
+  padding: 0.5em 0.7em;
+  border: 1px solid white;
+  border-radius: 2em;
+  margin-left: 1em;
+}

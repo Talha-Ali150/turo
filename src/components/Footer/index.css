@@ -1,75 +1,155 @@
 .footer {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 .footerSectionA {
-    display: flex;
-    margin: 0 auto;
-    width: 60em;
+  display: flex;
+  margin: 0 auto;
+  width: 60em;
 }
 
 .blogPara {
+  padding: 2px 4px;
+  border-radius: 3px;
+  line-height: 13px;
+  text-transform: uppercase;
+  border: 1px solid #231f20;
+  color: #231f20;
+  font-size: 11px;
+  width: 3em;
+}
+
+.sectionA {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  justify-content: space-around;
+}
+
+.sectionB {
+  margin-top: 1em;
+}
+
+.sectionC {
+  margin-top: 1em;
+}
+
+.sectionD {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 6em;
+}
+
+.section5 {
+}
+
+.footerSection1 {
+  display: flex;
+  width: 70%;
+}
+
+.footerSection2 {
+  width: 21%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionDPara {
+  font-size: 0.8em;
+}
+.footerSection3 {
+  display: flex;
+  width: 80%;
+}
+.footerSection3A {
+  display: flex;
+  width: 50%;
+  margin-left: 11em;
+}
+.footerSection3B {
+  display: flex;
+  width: 34%;
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .footer {
+    background-color: #f4f4f4;
+  }
+
+  .footerSectionA {
+    display: flex;
+    margin: 0 auto;
+    width: 60em;
+  }
+
+  .blogPara {
     padding: 2px 4px;
     border-radius: 3px;
     line-height: 13px;
     text-transform: uppercase;
-    border: 1px solid #231F20;
-    color: #231F20;
+    border: 1px solid #231f20;
+    color: #231f20;
     font-size: 11px;
     width: 3em;
-}
+  }
 
-.sectionA {
+  .sectionA {
     display: flex;
     align-items: center;
     margin-top: 1.5em;
     justify-content: space-around;
-}
+  }
 
-.sectionB {
+  .sectionB {
     margin-top: 1em;
-}
+  }
 
-.sectionC {
+  .sectionC {
     margin-top: 1em;
-}
+  }
 
-.sectionD {
+  .sectionD {
     margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 6em;
-}
+  }
 
-.section5 {}
+  .section5 {
+  }
 
-.footerSection1 {
+  .footerSection1 {
     display: flex;
     width: 70%;
-}
+  }
 
-.footerSection2 {
+  .footerSection2 {
     width: 21%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.sectionDPara {
+  .sectionDPara {
     font-size: 0.8em;
-}
-.footerSection3 {
+  }
+  .footerSection3 {
     display: flex;
     width: 92%;
-}
-.footerSection3A {
+  }
+  .footerSection3A {
     display: flex;
     width: 50%;
     margin-left: 4em;
-}
-.footerSection3B {
+  }
+  .footerSection3B {
     display: flex;
     width: 34%;
     margin-top: 2em;
+  }
 }
