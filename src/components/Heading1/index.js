@@ -12,7 +12,7 @@ export default function Heading1() {
           <p className="subHeading1">
             Explore the world's largest car sharing marketplace
           </p>
-        </div>
+        </div>        
       </div>
     </div>
   );

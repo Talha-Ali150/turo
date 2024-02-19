@@ -12,9 +12,6 @@ export default function Navbar() {
         <img className="logoStyling" src={logo} alt="logo" />
       </div>
 
-      {/* <div className="navbarBtnContainer"> */}
-      {/* </div> */}
-
       <div className="navbarIconContainer">
         <div className="navbarIconContainer1">
           <button className="navbarBtn">Become a host</button>

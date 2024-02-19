@@ -1,46 +1,105 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
-import { ReactComponent as ArrowDown } from "../../images/arrowDown.svg";
-import { ReactComponent as SearchIcon } from "../../images/searchIcon.svg";
+import arrowDown from "../../images/arrowDown.svg";
+import searchIcon from "../../images/searchIcon.svg";
 
 export default function SearchBar() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isMobile = windowWidth <= 767;
+  const isTablet = windowWidth > 767 && windowWidth <= 992;
+  const isLaptop = windowWidth > 992 && windowWidth <= 1200;
+  const isDesktop = windowWidth > 1200 && windowWidth <= 1500;
+  const isLargeDesktop = windowWidth > 1500;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <div className="searchBarContainer">
-      <div className="searchBarSection1">
-        <div className="searchBarSection1SectionA">
-          <p className="searchBarSection1SectionAPara1">Where</p>
+    <div className="searchBarMainContainer">
+      <div className="searchBarContainer">
+        <div className="searchBarSection1">
+          <div className="searchBarSection1SectionA">
+            <p className="searchBarSection1SectionAPara1">Where</p>
+          </div>
+          <div className="searchBarSection1SectionB">
+            <input
+              className="searchBarInput"
+              placeholder="City, airport, adress or hotel"
+            />
+          </div>
         </div>
-        <div className="searchBarSection1SectionB">
-          <input
-            className="searchBarInput"
-            placeholder="City, airport, adress or hotel"
+        <div className="searchBarSection2">
+          <div className="searchBarSection2SectionA">
+            <p className="searchBarSection1SectionAPara">From</p>
+          </div>
+          <div className="searchBarSection2SectionB">
+            <p className="searchBarSection1SectionAPara">3/24/2023</p>
+            <img className="downArrow" src={arrowDown} alt="down arrow" />
+            <p className="searchBarSection1SectionAPara">3/24/2023</p>
+            <img className="downArrow" src={arrowDown} alt="down arrow" />
+          </div>
+        </div>
+        <div className="searchBarSection3">
+          <div className="searchBarSection3SectionA">
+            <p className="searchBarSection1SectionAPara">Until</p>
+          </div>
+          <div className="searchBarSection3SectionB">
+            <p className="searchBarSection1SectionAPara">3/24/2023</p>
+            <img className="downArrow" src={arrowDown} alt="down arrow" />
+            <p className="searchBarSection1SectionAPara">3/24/2023</p>
+            <img className="downArrow" src={arrowDown} alt="down arrow" />
+          </div>
+        </div>
+        <div className="searchIconContainer">
+          <img src={searchIcon} alt="search button" />
+        </div>
+      </div>
+      <div className="searchBarImgContainer">
+        {isMobile && (
+          <img
+            className="searchBarImg"
+            src="https://resources.turo.com/f/253489/960x844/7bb22e254b/2402_hp_coreysnow2_480x422-2x.jpg"
+            alt=" cover"
           />
-        </div>
+        )}
+        {isTablet && (
+          <img
+            className="searchBarImg"
+            src="https://resources.turo.com/f/253489/1536x800/4e38d24794/2402_hp_coreysnow2_768x400-2x.jpg"
+            alt=" cover"
+          />
+        )}
+        {isLaptop && (
+          <img
+            className="searchBarImg"
+            src="https://resources.turo.com/f/253489/1984x800/0710a1fffb/2402_hp_coreysnow2_992x400-2x.jpg"
+            alt=" cover"
+          />
+        )}
+        {isDesktop && (
+          <img
+            className="searchBarImg"
+            src="https://resources.turo.com/f/253489/2400x800/ad06e10e24/2402_hp_coreysnow2_1200x400-2x.jpg"
+            alt=" cover"
+          />
+        )}
+        {isLargeDesktop && (
+          <img
+            className="searchBarImg"
+            src="https://resources.turo.com/f/253489/3000x800/ecfd89a29f/2402_hp_coreysnow2_1500x400-2x.jpg"
+            alt=" cover"
+          />
+        )}
       </div>
-      <div className="searchBarSection2">
-        <div className="searchBarSection2SectionA">
-          <p className="searchBarSection1SectionAPara">From</p>
-        </div>
-        <div className="searchBarSection2SectionB">
-          <p className="searchBarSection1SectionAPara">3/24/2023</p>
-          <ArrowDown />
-          <p className="searchBarSection1SectionAPara">3/24/2023</p>
-          <ArrowDown />
-        </div>
-      </div>
-      <div className="searchBarSection3">
-        <div className="searchBarSection3SectionA">
-          <p className="searchBarSection1SectionAPara">Until</p>
-        </div>
-        <div className="searchBarSection3SectionB">
-          <p className="searchBarSection1SectionAPara">3/24/2023</p>
-          <ArrowDown />
-          <p className="searchBarSection1SectionAPara">3/24/2023</p>
-          <ArrowDown />
-        </div>
-      </div>
-      <div className="searchIconContainer">
-        <SearchIcon className="searchIcon" />
+      <div>
       </div>
     </div>
   );

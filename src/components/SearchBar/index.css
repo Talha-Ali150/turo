@@ -1,4 +1,4 @@
-.searchBarContainer {
+/* .searchBarContainer {
   width: 52em;
   position: absolute;
   top: 7em;
@@ -122,4 +122,107 @@
   }
   
 }
+ */
 
+ .searchBarImg {
+  height: 500px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .searchBarMainContainer {
+    position: relative;
+  }
+  .searchBarContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    padding: 2px;
+    font-family: RlBasisGrotesque, Avenir, "Helvetica Neue", Helvetica,
+      sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    width: 720px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 50vw;
+
+    transform: translate(-50%, -50%);
+  }
+  .searchBarInput {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .searchBarSection1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchBarSection1SectionB {
+    margin-top: 5px;
+  }
+  .searchBarSection2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchBarSection3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchBarSection4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchBarSection2SectionB {
+    display: flex;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .searchBarSection3SectionB {
+    display: flex;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .searchIconContainer {
+    background-color: #593cfb;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .downArrow {
+    margin: 0px 5px;
+  }
+  .searchBarImg {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .searchBarImg {
+    height: 400px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .searchBarImg {
+    height: 400px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .searchBarImg {
+    height: 400px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .searchBarImg {
+    height: 400px;
+    width: 100%;
+  }
+}

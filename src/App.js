@@ -1,7 +1,7 @@
 import "./App.css";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
-// import SearchBar from "./components/SearchBar";
+import SearchBar from "./components/SearchBar";
 // import Heading1 from "./components/Heading1";
 // import Slider1 from "./components/Slider1";
 // import Slider2 from "./components/Slider2";
@@ -23,8 +23,8 @@ function App() {
     <div className="App">
       <Banner />
       <Navbar />
-      {/* <SearchBar />
-      <Heading1 />
+      <SearchBar />
+      {/* <Heading1 />
       <Slider1 />
       <Slider2 />
       <Slider3 />
