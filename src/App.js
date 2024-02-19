@@ -24,8 +24,8 @@ function App() {
       <Banner />
       <Navbar />
       <SearchBar />
-      {/* <Heading1 />
-      <Slider1 />
+      {/* <Heading1 /> */}
+      {/* <Slider1 />
       <Slider2 />
       <Slider3 />
       <Heading2 />

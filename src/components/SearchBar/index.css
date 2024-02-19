@@ -1,132 +1,27 @@
-/* .searchBarContainer {
-  width: 52em;
-  position: absolute;
-  top: 7em;
-  left: 10em;
-  padding: 0.4em 2em;
-  border: 1px solid white;
-  border-radius: 2em;
-  margin: 0 2px;
-  background-color: white;
-  display: flex;
+.searchBarImg {
+  height: 500px;
+  width: 100%;
+}
+.searchBarDivider {
+  height: 1px;
+  background-color: grey;
+  width: 90%;
 }
 .searchBarInput {
-  outline: none;
   border: none;
-  font-size: 1em;
-}
-.searchBarSection1 {
-  flex: 0.4;
-}
-.searchBarSection2 {
-  flex: 0.3;
-}
-.searchBarSection3 {
-  flex: 0.3;
-}
-.searchBarSection1SectionA {
-}
-.searchBarSection1SectionAPara1 {
-  margin: 0;
-  padding: 0px;
-  font-size: 0.9em;
-}
-.searchBarSection1SectionB {
-}
-.searchBarSection2SectionA {
+  outline: none;
 }
 .searchBarSection2SectionB {
   display: flex;
-}
-.searchBarSection3SectionA {
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
 }
 .searchBarSection3SectionB {
   display: flex;
-}
-.searchBarSection1SectionAPara {
-  margin: 0 1em;
-  padding: 0px;
-  font-size: 0.8em;
-}
-.searchIcon {
-
-}
-.searchIconContainer {
-  background-color: #593CFB;
-  padding: 0.5em 0.7em;
-  border: 1px solid white;
-  border-radius: 2em;
-  margin-left: 1em;
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 992px){
-  .searchBarContainer {
-    width: 52em;
-    position: absolute;
-    top: 7em;
-    left: 6em;
-    padding: 0.4em 2em;
-    border: 1px solid white;
-    border-radius: 2em;
-    margin: 0 2px;
-    background-color: white;
-    display: flex;
-  }
-  .searchBarInput {
-    outline: none;
-    border: none;
-    font-size: 1em;
-  }
-  .searchBarSection1 {
-    flex: 0.4;
-  }
-  .searchBarSection2 {
-    flex: 0.3;
-  }
-  .searchBarSection3 {
-    flex: 0.3;
-  }
-  .searchBarSection1SectionA {
-  }
-  .searchBarSection1SectionAPara1 {
-    margin: 0;
-    padding: 0px;
-    font-size: 0.9em;
-  }
-  .searchBarSection1SectionB {
-  }
-  .searchBarSection2SectionA {
-  }
-  .searchBarSection2SectionB {
-    display: flex;
-  }
-  .searchBarSection3SectionA {
-  }
-  .searchBarSection3SectionB {
-    display: flex;
-  }
-  .searchBarSection1SectionAPara {
-    margin: 0 1em;
-    padding: 0px;
-    font-size: 0.8em;
-  }
-  .searchIcon {
-  
-  }
-  .searchIconContainer {
-    background-color: #593CFB;
-    padding: 0.5em 0.7em;
-    border: 1px solid white;
-    border-radius: 2em;
-    margin-left: 1em;
-  }
-  
-}
- */
-
- .searchBarImg {
-  height: 500px;
-  width: 100%;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -225,4 +120,91 @@
     height: 400px;
     width: 100%;
   }
+}
+
+/* code for mobile */
+.mobileSearchBarDivider {
+  height: 1px;
+  background-color: grey;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mobileSearchBarMainContainer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+
+  margin-top: 30px;
+}
+.mobileSearchBarContainer {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 95%;
+  max-width: 420px;
+}
+.mobileSearchBarContainerSection1 {
+}
+.mobileSearchBarContainerSection1Text {
+  font-size: 12px;
+  font-weight: 500;
+}
+.mobileSearchBarContainerSection1Input {
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  width: 100%;
+}
+.mobileSearchBarContainerSection1Input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mobileSearchBarContainerSection2 {
+}
+.mobileSearchBarSection2Text {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.mobileSearchBarSection2TimeDateMainContainer {
+  display: flex;
+  margin-top: 10px;
+}
+.mobileSearchBarSection2TimeDateContainer {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mobileSearchBarSection2Date {
+}
+.mobileSearchBarSection2Img {
+  margin-left: 10vw;
+}
+.mobileSearchBarSection2Time {
+}
+
+.mobileSearchBarContainerSection4Btn {
+  margin-top: 5px;
+  background-color: #6919f4;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mobileSearchBarImg {
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
 }
