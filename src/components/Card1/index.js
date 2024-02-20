@@ -1,11 +1,13 @@
 import React from "react";
-import './index.css'
+import "./index.css";
 
 export default function Card1(props) {
   return (
-    <div className="carCard">
-      <img className="carImgContainer" src={props.source} />
-      <p className="carCardText">{props.title}</p>
+    <div className="slider1Card1Container">
+      <div className="slider1Card1ImgContainer">
+        <img className="slider1Card1Img" src={props.source} alt="car" />
+      </div>
+      <p className="slider1Card1Title">{props.title}</p>
     </div>
   );
 }
