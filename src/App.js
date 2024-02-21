@@ -27,8 +27,8 @@ function App() {
       <Heading1 />
       <Slider1 />
       <Slider2 />
-      {/* <Slider3 />
-      <Heading2 />
+      <Slider3 />
+      {/* <Heading2 />
       <Image2 />
       <Slider4 />
       <GiftCard />

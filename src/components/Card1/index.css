@@ -10,6 +10,12 @@
   border-radius: 5px;
   width: 95%;
 }
+.slider1Card1Container:hover{
+  cursor: pointer;
+  .slider1Card1Title{
+    color: #6930f4;
+  }
+}
 
 .slider1Card1Img {
   width: 100%;

@@ -1,9 +1,11 @@
+import React, { useEffect, useRef, useState } from "react";
 import "./index.css";
-import React from "react";
 import Card3 from "../Card3";
-import Carousel from "react-elastic-carousel";
+import { Carousel } from "antd";
+import less from "../../images/lesserthan.svg";
+import great from "../../images/greaterthan.svg";
 
-export default function Slider3() {
+const Slider3 = () => {
   const cardProps = [
     {
       text: "Los Angeles",
@@ -120,24 +122,131 @@ export default function Slider3() {
         "https://resources.turo.com/f/81934/240x240/8b414f123e/illo_city_denver_hover-2x.png",
     },
   ];
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isMobile = windowWidth <= 425;
+  const isTablet = windowWidth > 425 && windowWidth <= 768;
+  const isLaptop = windowWidth > 768 && windowWidth <= 992;
+  const isDesktop = windowWidth > 992 && windowWidth <= 1200;
+  const isLargeDesktop = windowWidth > 1200;
+
+  useEffect(() => {
+    cardProps.forEach((item) => {
+      const img1 = new Image();
+      img1.src = item.pic;
+      const img2 = new Image();
+      img2.src = item.picHover;
+    });
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const carouselRef = useRef();
+  const nextSlide = () => {
+    carouselRef.current.next();
+  };
+
+  const prevSlide = () => {
+    carouselRef.current.prev();
+  };
+
   return (
     <div className="carouselContainer3">
       <div className="carouselHeadingContainer3">
         <p className="carouselHeading3">Browse by destination</p>
+        <div className="carousel1BtnContainer">
+          <img
+            className="carousel1BtnStyling"
+            src={less}
+            onClick={prevSlide}
+            alt="previous"
+          />
+          <img
+            className="carousel1BtnStyling"
+            src={great}
+            onClick={nextSlide}
+            alt="next"
+          />
+        </div>
       </div>
-      <Carousel
-        outerSpacing={0}
-        itemPadding={[10, 0]}
-        itemsToScroll={1}
-        itemsToShow={6}
-        pagination={false}
-      >
-        {cardProps.map((item) => {
-          return (
-            <Card3 pic={item.pic} picHover={item.picHover} text={item.text} />
-          );
-        })}
-      </Carousel>
+      {isMobile && (
+        <Carousel ref={carouselRef} slidesToShow={2} draggable={true}>
+          {cardProps.map((item) => (
+            <Card3
+              key={item.text}
+              pic={item.pic}
+              picHover={item.picHover}
+              text={item.text}
+            />
+          ))}
+        </Carousel>
+      )}
+
+      {isTablet && (
+        <Carousel ref={carouselRef} slidesToShow={3} draggable={true}>
+          {cardProps.map((item) => (
+            <Card3
+              key={item.text}
+              pic={item.pic}
+              picHover={item.picHover}
+              text={item.text}
+            />
+          ))}
+        </Carousel>
+      )}
+
+      {isLaptop && (
+        <Carousel ref={carouselRef} slidesToShow={4} draggable={true}>
+          {cardProps.map((item) => (
+            <Card3
+              key={item.text}
+              pic={item.pic}
+              picHover={item.picHover}
+              text={item.text}
+            />
+          ))}
+        </Carousel>
+      )}
+
+      {isDesktop && (
+        <Carousel ref={carouselRef} slidesToShow={5} draggable={true}>
+          {cardProps.map((item) => (
+            <Card3
+              key={item.text}
+              pic={item.pic}
+              picHover={item.picHover}
+              text={item.text}
+            />
+          ))}
+        </Carousel>
+      )}
+
+      <div className="carouselContainer3Slider">
+        {isLargeDesktop && (
+          <Carousel ref={carouselRef} slidesToShow={6} draggable={true}>
+            {cardProps.map((item) => (
+              <Card3
+                key={item.text}
+                pic={item.pic}
+                picHover={item.picHover}
+                text={item.text}
+              />
+            ))}
+          </Carousel>
+        )}
+      </div>
     </div>
   );
-}
+};
+
+export default Slider3;
