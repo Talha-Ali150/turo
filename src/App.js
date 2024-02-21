@@ -4,19 +4,19 @@ import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import Heading1 from "./components/Heading1";
 import Slider1 from "./components/Slider1";
-// import Slider2 from "./components/Slider2";
-// import Slider3 from "./components/Slider3";
-// import Heading2 from "./components/Heading2";
-// import Image2 from "./components/Image2";
-// import Slider4 from "./components/Slider4";
-// import GiftCard from "./components/GiftCard";
-// import Heading3 from "./components/Heading3";
-// import Slider5 from "./components/Slider5";
-// import Image3 from "./components/Image3";
-// import Heading4 from "./components/Heading4";
-// import AccordContainer from "./components/AccordContainer";
-// import ConditionContainer from "./components/ConditionContainer";
-// import Footer from "./components/Footer";
+import Slider2 from "./components/Slider2";
+import Slider3 from "./components/Slider3";
+import Heading2 from "./components/Heading2";
+import Image2 from "./components/Image2";
+import Slider4 from "./components/Slider4";
+import GiftCard from "./components/GiftCard";
+import Heading3 from "./components/Heading3";
+import Slider5 from "./components/Slider5";
+import Image3 from "./components/Image3";
+import Heading4 from "./components/Heading4";
+import AccordContainer from "./components/AccordContainer";
+import ConditionContainer from "./components/ConditionContainer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
       <SearchBar />
       <Heading1 />
       <Slider1 />
-      {/* <Slider2 />
-      <Slider3 />
+      <Slider2 />
+      {/* <Slider3 />
       <Heading2 />
       <Image2 />
       <Slider4 />

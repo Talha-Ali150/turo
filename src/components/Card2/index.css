@@ -1,74 +1,165 @@
-.cardContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 50px auto;
+.slider2CardContainer {
+  font-family: RlBasisGrotesque, Avenir, "Helvetica Neue", Helvetica, sans-serif;
 }
-
-.text1a {
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 32px;
-  margin-right: 90px;
+.slider2ImgContainer {
+  width: 54vw;
+  margin: 0 auto;
 }
-.text1b {
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 32px;
-  color: #5948fb;
-}
-.container1 {
+.slider2Img {
   width: 100%;
 }
-.container2 {
-  width: 70%;
+.slider2Container2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
-
-.btn1 {
+.slider2Container2Text1 {
+  font-size: 21px;
+  font-weight: 900;
+}
+.slider2Container2Text1a {
+}
+.slider2Container2Text1b {
+  color: #5948fb;
+}
+.slider2Container2Text2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 15px 0;
+}
+.slider2Container2Text2Para {
+}
+.slider2BtnContainer {
+  margin: 15px auto;
+  min-width: 20%;
+}
+.slider2Btn {
   background-color: #593cfb;
   color: white;
-  line-height: 50px;
-  font-weight: bold;
-  border: 1px solid white;
   font-size: 18px;
-  padding: 0px 10px;
+  padding: 12px;
+  border: none;
+}
+.slider2NavBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
 }
 
-
-@media only screen and (max-width: 1200px) and (min-width: 992px){
-  .cardContainer {
-    display: flex;
-    justify-content: space-between;
+@media only screen and (min-width: 768px) {
+  .slider2CardContainer {
+    font-family: RlBasisGrotesque, Avenir, "Helvetica Neue", Helvetica,
+      sans-serif;
+  }
+  .slider2ImgContainer {
+    width: 42vw;
+    margin: 0 auto;
+  }
+  .slider2Img {
     width: 100%;
-    margin: 50px auto;
   }
-  
-  .text1a {
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 32px;
+  .slider2Container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
-  .text1b {
+  .slider2Container2Text1 {
     font-size: 28px;
-    font-weight: bold;
-    line-height: 32px;
+    font-weight: 900;
+  }
+  .slider2Container2Text1a {
+  }
+  .slider2Container2Text1b {
     color: #5948fb;
   }
-  .container1 {
-    width: 100%;
+  .slider2Container2Text2 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 15px 0;
   }
-  .container2 {
-    width: 70%;
+  .slider2Container2Text2Para {
   }
-  
-  .btn1 {
+  .slider2BtnContainer {
+    margin: 15px auto;
+    min-width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .slider2Btn {
     background-color: #593cfb;
     color: white;
-    line-height: 50px;
-    font-weight: bold;
-    border: 1px solid white;
     font-size: 18px;
-    padding: 0px 10px;
+    padding: 12px;
+    border: none;
   }
-  
+  .slider2NavBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .slider2CardContainer {
+    font-family: RlBasisGrotesque, Avenir, "Helvetica Neue", Helvetica,
+      sans-serif;
+      display: flex;
+  }
+  .slider2ImgContainer {
+    width: 41%;
+    margin: 0 auto;
+  }
+  .slider2Img {
+    width: 100%;
+  }
+  .slider2Container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 46%;
+  }
+  .slider2Container2Text1 {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .slider2Container2Text1a {
+  }
+  .slider2Container2Text1b {
+    color: #5948fb;
+  }
+  .slider2Container2Text2 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .slider2Container2Text2Para {
+  }
+  .slider2BtnContainer {
+    margin: 15px auto;
+    min-width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .slider2Btn {
+    background-color: #593cfb;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+  }
+  .slider2NavBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+
+  .slider2CardContainer {
+    font-family: RlBasisGrotesque, Avenir, "Helvetica Neue", Helvetica,
+      sans-serif;
+      display: flex;
+      max-width: 1200px;
+      margin: 0px auto;
+  }
 }
