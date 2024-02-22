@@ -1,32 +1,33 @@
 .carouselContainer4 {
   width: 90%;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 180px auto;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
 }
-    
-  .carouselHeading{
-    font-size: 21px;
-    font-weight: bold;
-  }
-  
-  .carouselHeadingContainer {
-    margin-left: 75px;
-  }
 
-  @media only screen and (max-width: 1200px) and (min-width: 992px){
-    .carouselContainer4 {
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 70px;
-    }
-        
-      .carouselHeading{
-        font-size: 21px;
-        font-weight: bold;
-      }
-      
-      .carouselHeadingContainer {
-        margin-left: 75px;
-      }
-     
+.carousel5Heading {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.carousel5HeadingContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+}
+
+@media only screen and (min-width: 600px) {
+  .carouselContainer4 {
+    width: 90%;
+    margin: 180px auto;
   }
+  .carousel5Heading {
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .carousel5Heading {
+    font-size: 21px;
+    font-weight: 900;
+  }
+}
