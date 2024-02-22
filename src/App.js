@@ -29,8 +29,8 @@ function App() {
       <Slider2 />
       <Slider3 />
       <Heading2 />
-      {/* <Image2 />
-      <Slider4 />
+      <Image2 />
+      {/* <Slider4 />
       <GiftCard />
       <Heading3 />
       <Slider5 />
