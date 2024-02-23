@@ -36,8 +36,8 @@ function App() {
       <Slider5 />
       <Image3 />
       <Heading4 />
-      {/* <AccordContainer />
-      <ConditionContainer />
+      <AccordContainer />
+      {/* <ConditionContainer />
       <Footer /> */}
     </div>
   );
