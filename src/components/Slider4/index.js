@@ -81,8 +81,8 @@ export default function Slider4() {
 
   return (
     <div className="carouselContainer4">
-      <div className="carousel5HeadingContainer">
-        <p className="carousel5Heading">Browse by experience</p>
+      <div className="carousel4HeadingContainer">
+        <p className="carousel4Heading">Browse by experience</p>
         <div className="carousel1BtnContainer">
           <img
             className="carousel1BtnStyling"
