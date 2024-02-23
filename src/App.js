@@ -17,8 +17,25 @@ import Heading4 from "./components/Heading4";
 import AccordContainer from "./components/AccordContainer";
 import ConditionContainer from "./components/ConditionContainer";
 import Footer from "./components/Footer";
+import MobileFooter from "./components/MobileFooter";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isMobile = windowWidth < 768;
+  const isTablet = windowWidth >= 768;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="App">
       <Banner />
@@ -38,7 +55,8 @@ function App() {
       <Heading4 />
       <AccordContainer />
       <ConditionContainer />
-      {/* <Footer /> */}
+      {isMobile && <MobileFooter />}
+      {isTablet && <Footer />}
     </div>
   );
 }

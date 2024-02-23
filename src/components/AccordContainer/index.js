@@ -103,28 +103,6 @@ export default function AccordContainer() {
     },
   ];
   return (
-    // <div className="accordContainer">
-    //   <div className="accordContainerLeft">
-    //     {accordItemsLeft.map((item) => {
-    //       return (
-    //         <Accord
-    //           accordHeader={item.accordHeader}
-    //           accordText={item.accordText}
-    //         />
-    //       );
-    //     })}
-    //   </div>
-    //   <div className="accordContainerRight">
-    //     {accordItemsRight.map((item) => {
-    //       return (
-    //         <Accord
-    //           accordHeader={item.accordHeader}
-    //           accordText={item.accordText}
-    //         />
-    //       );
-    //     })}
-    //   </div>
-    // </div>
     <div className="accordContainer">
       <div className="accordContainer1">
         {accordItemsLeft.map((item) => {
