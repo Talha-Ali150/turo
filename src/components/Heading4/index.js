@@ -3,10 +3,11 @@ import "./index.css";
 
 export default function Heading4() {
   return (
-    <div className="text4">
-      <div className="subHeading4Container1">
-        <div className="subHeading4Background1"></div>
-        <p className="subHeading4">Frequently asked questions</p>
+    <div className="text3">
+      <div className="headingContainer3">
+        <p className="heading3">Frequently asked questions</p>
+
+        <div className="headingBackground3"></div>
       </div>
     </div>
   );
