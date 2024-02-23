@@ -1,15 +1,14 @@
 import React from "react";
-import './index.css'
+import "./index.css";
 
 export default function Heading3() {
   return (
     <div>
-      <div className="text1">
-        <div className="subHeading3Container1">
-          <div className="subHeading3Background1"></div>
-          <p className="subHeading3">
-          Meet the hosts
-          </p>
+      <div className="text3">
+        <div className="headingContainer3">
+          <p className="heading3">Meet the hosts</p>
+
+          <div className="headingBackground3"></div>
         </div>
       </div>
     </div>

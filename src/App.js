@@ -32,8 +32,8 @@ function App() {
       <Image2 />
       <Slider4 />
       <GiftCard />
-      {/* <Heading3 />
-      <Slider5 />
+      <Heading3 />
+      {/* <Slider5 />
       <Image3 />
       <Heading4 />
       <AccordContainer />
