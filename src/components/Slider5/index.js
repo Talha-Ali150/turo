@@ -133,7 +133,7 @@ export default function Slider5() {
         </div>
       </div>
       {isMobile && (
-        <Carousel ref={carouselRef} draggable slidesToShow={1}>
+        <Carousel className="slider5MainContainer" ref={carouselRef} draggable slidesToShow={1}>
           {cardProps.map((item) => {
             return (
               <Card5
@@ -148,7 +148,7 @@ export default function Slider5() {
         </Carousel>
       )}
       {isTablet && (
-        <Carousel ref={carouselRef} draggable slidesToShow={2}>
+        <Carousel className="slider5MainContainer" ref={carouselRef} draggable slidesToShow={2}>
           {cardProps.map((item) => {
             return (
               <Card5
@@ -163,7 +163,7 @@ export default function Slider5() {
         </Carousel>
       )}
       {isLaptop && (
-        <Carousel ref={carouselRef} draggable slidesToShow={3}>
+        <Carousel className="slider5MainContainer" ref={carouselRef} draggable slidesToShow={3}>
           {cardProps.map((item) => {
             return (
               <Card5

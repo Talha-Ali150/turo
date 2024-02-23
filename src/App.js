@@ -34,8 +34,8 @@ function App() {
       <GiftCard />
       <Heading3 />
       <Slider5 />
-      {/* <Image3 />
-      <Heading4 />
+      <Image3 />
+      {/* <Heading4 />
       <AccordContainer />
       <ConditionContainer />
       <Footer /> */}
