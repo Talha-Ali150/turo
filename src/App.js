@@ -33,8 +33,8 @@ function App() {
       <Slider4 />
       <GiftCard />
       <Heading3 />
-      {/* <Slider5 />
-      <Image3 />
+      <Slider5 />
+      {/* <Image3 />
       <Heading4 />
       <AccordContainer />
       <ConditionContainer />

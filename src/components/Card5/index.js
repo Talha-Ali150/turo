@@ -1,43 +1,43 @@
 import React from "react";
 import "./index.css";
-
-import { ReactComponent as RatingHost } from "../../images/ratingHostIcon.svg";
-import { ReactComponent as RatingStar } from "../../images/ratingStarIcon.svg";
+import ratingHostIcon from "../../images/ratingHostIcon.svg";
+import ratingStarIcon from "../../images/ratingStarIcon.svg";
 
 export default function Card5(props) {
   return (
     <div className="card5Container">
-      <div className="card5ContainerSection1">
-        <div className="card5ContainerSection1a">
-          <img
-            className="section1Img"
-            src={props.hostImg}
-            alt=""
-          />
+      <div className="card5MainContainer">
+        <div className="card5Section1">
+          <div className="card5Section1a">
+            <img
+              className="card5Section1aImg"
+              src={props.hostImg}
+              alt="host avatar"
+            />
+          </div>
+
+          <div className="card5Section1b">
+            <p className="card5Section1bText1">{props.hostName}</p>
+            <div className="card5Section1bRatingContainer">
+              <img className="card5Section1bImg" src={ratingHostIcon} />
+              <p className="card5Section1bText2">All-Star Host</p>
+            </div>
+            <p className="card5Section1bText3">{props.hostTrips}</p>
+          </div>
         </div>
-        <div className="card5ContainerSection1b">
-          <p className="card5ContainerSection1bHead">{props.hostName}</p>
-          <span className="card5ContainerSection1bText1">
-            <RatingHost />
-            All Star Host
-          </span>
-          <p className="card5ContainerSection1bText2">
-            {props.hostTrips}
-          </p>
+        <div className="card5Section2">
+          <img src={ratingStarIcon} alt="rating" />
+          <img src={ratingStarIcon} alt="rating" />
+          <img src={ratingStarIcon} alt="rating" />
+          <img src={ratingStarIcon} alt="rating" />
+          <img src={ratingStarIcon} alt="rating" />
         </div>
-      </div>
-      <div className="card5ContainerSection2">
-        <RatingStar />
-        <RatingStar />
-        <RatingStar />
-        <RatingStar />
-        <RatingStar />
-      </div>
-      <div className="card5ContainerSection3">
-      <span>{props.hostReviews}</span>
-      </div>
-      <div className="card5ContainerSection4">
-      <div>{props.hostReviewDate}</div>
+        <div className="card5Section3">
+          <p className="card5Section3Text1">{props.hostReviews}</p>
+        </div>
+        <div className="card5Section4">
+          <p className="card5Section4Text1">{props.hostReviewDate}</p>
+        </div>
       </div>
     </div>
   );
